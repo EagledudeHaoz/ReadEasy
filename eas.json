@@ -1,0 +1,28 @@
+{
+  "cli": {
+    "version": ">= 7.3.0"
+  },
+  "build": {
+    "development": {
+      "extends": "production",
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "extends": "production"
+    },
+    "production": {
+      "android": {
+        "resourceClass": "medium"
+      },
+      "ios": {
+        "resourceClass": "large"
+      },
+      "node": "18.18.0"
+    }
+  }
+}
